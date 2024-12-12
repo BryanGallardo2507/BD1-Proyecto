@@ -1,0 +1,123 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-card {
+    background-color: white;
+    padding: 48px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.logo svg {
+    width: 75px;
+    height: 75px;
+}
+
+h1 {
+    text-align: center;
+    color: #202124;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #5f6368;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5f6368;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.password-input {
+    position: relative;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    color: #5f6368;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.terms {
+    font-size: 12px;
+    color: #5f6368;
+    margin-top: 20px;
+}
+
+.terms a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 24px;
+    }
+}
